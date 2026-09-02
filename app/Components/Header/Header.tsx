@@ -165,7 +165,7 @@ export default function HeroSection() {
   return (
     <section
       ref={heroRef}
-      className="relative  w-full overflow-hidden bg-[#061522] text-white"
+      className="relative  w-full overflow-hidden bg-[#061522] text-white  "
     >
       {/* ================= BACKGROUND ================= */}
 

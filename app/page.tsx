@@ -7,7 +7,7 @@ import NewArrival from "./Components/NewArrival/NewArrivalDepthCarousel";
 export default function Home() {
   return (
     <div>
-      <div className="min-h-[calc(100vh-80px)]">
+      <div className="min-h-[640px]">
 <Header/>
       </div>
       <Category/>
