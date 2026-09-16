@@ -13,6 +13,7 @@ import {
   FaShirt,
   FaGift,
 } from "react-icons/fa6";
+import Title from "../Shared/Title";
 
 const categories = [
   {
@@ -97,24 +98,14 @@ export default function ShopByCategory() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-[#f8fafc] py-10 sm:py-8">
+    <section className="relative overflow-hidden bg-[#f8fafc] md:py-15 py-8">
       <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
         {/* ================= HEADER ================= */}
         <div className="mb-7">
-          <div className="mb-2 flex items-center gap-2">
-            <span className="h-px w-7 bg-[#F97316]" />
-
-            <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#F97316]">
-              Explore
-            </span>
-          </div>
-
-          <h2 className="text-2xl font-black tracking-tight text-[#0A1929] sm:text-3xl">
-            Shop by{" "}
-            <span className="bg-gradient-to-r from-[#F97316] to-[#ff9a55] bg-clip-text text-transparent">
-              Category
-            </span>
-          </h2>
+         <Title
+        title="Shop by Category"
+        highlightedText="Category"
+        description="Browse our wide range of categories to find exactly what you're looking for."/>
         </div>
 
         {/* ================= CAROUSEL WRAPPER ================= */}

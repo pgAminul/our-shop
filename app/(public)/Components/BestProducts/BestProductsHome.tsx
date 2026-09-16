@@ -11,6 +11,7 @@ import ProductCard, {
 } from "../Shared/ProductsCard";
 
 import ProductScroller from "../Shared/Scroller";
+import Title from "../Shared/Title";
 
 const products: Product[] = [
   {
@@ -94,16 +95,12 @@ export default function BestProducts() {
             </span>
           </div>
 
-          <h2 className="text-3xl font-black tracking-tight text-[#0A1929] sm:text-4xl lg:text-5xl">
-            Best{" "}
-            <span className="text-[#F97316]">
-              Products
-            </span>
-          </h2>
+         <Title
+        title="Best Products"
+        highlightedText="Products"
+        description="Discover the products our customers love the most."
+      />
 
-          <p className="mt-2 text-sm text-slate-500">
-            Discover the products our customers love the most.
-          </p>
         </div>
 
         {/* Products */}

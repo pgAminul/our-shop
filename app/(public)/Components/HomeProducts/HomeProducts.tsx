@@ -9,6 +9,7 @@ import {
   FiStar,
   FiZap,
 } from "react-icons/fi";
+import Title from "../Shared/Title";
 
 const products = [
   {
@@ -81,7 +82,7 @@ const products = [
 
 const ProductSection = () => {
   return (
-    <section className="relative overflow-hidden bg-[#f8fafc] pb-8">
+    <section className="relative overflow-hidden bg-[#f8fafc] py-5 md:py-8">
       {/* Background decoration */}
       <div className="pointer-events-none absolute -left-40 top-20 h-80 w-80 rounded-full bg-orange-500/5 blur-3xl" />
 
@@ -89,24 +90,19 @@ const ProductSection = () => {
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* ================= HEADER ================= */}
-        <div className="mb-10 flex flex-col items-center text-center md:mb-12">
-          <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-orange-200 bg-orange-50 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-[#F97316]">
+
+        <div>
+           <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-orange-200 bg-orange-50 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-[#F97316]">
             <FiZap className="h-3.5 w-3.5" />
             AfiaMart Collection
           </div>
-
-          <h2 className="text-3xl font-black tracking-tight text-[#0A1929] sm:text-4xl md:text-5xl">
-            Explore Our{" "}
-            <span className="bg-gradient-to-r from-[#F97316] to-[#ff9b5a] bg-clip-text text-transparent">
-              Products
-            </span>
-          </h2>
-
-          <p className="mt-3 max-w-xl text-sm leading-6 text-slate-500 sm:text-base">
-            Carefully selected products, great prices, and quality you can
-            trust.
-          </p>
+          <Title
+            title="Explore Our Products"
+            highlightedText="Products"
+            description="Find Your Perfect Pick From Our Collection."
+          />
         </div>
+  
 
         {/* ================= PRODUCT GRID ================= */}
         <div className="grid grid-cols-2 gap-3 sm:gap-5 md:grid-cols-3 lg:gap-6">

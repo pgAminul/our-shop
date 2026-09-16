@@ -13,7 +13,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-[#061A3A] text-white lg:mt-28 md:mt-20 mt-8 ">
+    <footer className="bg-[#061A3A] text-white md:mt-10  mt-8 ">
 
       {/* Main Footer */}
       <div className="mx-auto max-w-7xl px-5 py-12 sm:px-8 lg:px-10">
@@ -101,12 +101,9 @@ export default function Footer() {
               </li>
 
               <li>
-                <Link
-                  href="/about"
-                  className="transition hover:text-orange-500"
-                >
-                  About Us
-                </Link>
+              <Link href="/about" className="transition hover:text-orange-500">
+  About Us
+</Link>
               </li>
 
               <li>
